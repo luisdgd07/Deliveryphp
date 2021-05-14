@@ -1,0 +1,313 @@
+#fondo-imagen {
+
+
+    background-image: url(../admin/storage/font-index1.JPG);
+    
+       
+
+    line-height: 1.5;
+    font-size: 1.4em;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+}
+
+
+#color-fondo {
+
+    background-color: rgba(255,255,255,.5);
+    border-top: 0px solid rgba(183, 165, 165,.2);
+  
+}
+
+#marcas{
+    background-color: rgba(186, 188, 171,.6);
+    color: #000;
+    
+}
+
+
+
+
+.titulos {
+  font-family: font|initial|inherit;
+  color: #454342;
+
+}   /*  color de letra antes*/
+
+
+.titulos:hover{
+    color: #706F6F;        /*  color de letra despues*/
+}
+
+
+.precios {
+  font-family: font|initial|inherit;
+  color: #3c8ace
+
+}   /*  color de letra antes*/
+
+
+.precios:hover{
+    color: #82b9e8        /*  color de letra despues*/
+
+}
+
+.cursor         { cursor: default; }
+
+
+
+
+.productos {
+  display: inline-block;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+
+          border: 3px solid #ABABAC;
+}
+
+
+.productos:hover {
+   background: #fff;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #3498db;
+    }
+
+
+.productos > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+a.productos:hover,
+a.productos:focus {
+  border-color: #428bca;
+}
+
+.productos > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.productos .caption {
+  padding: 9px;
+  color: #333333;
+      -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#aparecer {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.productos, #aparecer {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+
+
+
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover
+
+ {
+
+    opacity: 0.6;
+    box-shadow: 0px 0px 0px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(0.9);
+
+
+}
+
+
+
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: auto;
+    width:auto;
+    height:auto;
+    max-width: auto;
+     background: #fff;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #FFFFFF;
+  
+}
+
+.modal-content:hover {
+   background: #fff;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #ff072c;
+    }
+
+
+
+
+.modal-producto {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    width:350px;
+    height:380px;
+    max-width: 100%;
+     background: #fff;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #FFFFFF;
+  
+}
+
+.modal-producto:hover {
+   background: #fff;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #ff072c;
+    }
+
+
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+.zoom
+{
+    display:inline-block;
+    border: 1px solid #e6e6e6;
+    
+    width:196px;
+    height:210px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+    {cursor:zoom-in;}
+}
+.zoom:hover
+{
+    box-shadow: 0px 0px 40px #0c0c0c;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.3);
+    
+     {cursor:zoom-in;}
+}
+
+.zoom-cursor{cursor:zoom-in;}

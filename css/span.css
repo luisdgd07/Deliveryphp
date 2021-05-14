@@ -1,0 +1,100 @@
+/*- ventana emergente---*/
+.ventana{
+
+
+   
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, 0.75);
+	
+	top: 0;
+	left: 0;
+	
+
+	animation: ventana 1s 2s forwards;/*para que se quede la animacion intacta*/
+	visibility: hidden;
+	opacity: 0;
+
+}
+.contenido{
+
+
+
+	
+
+	margin: auto;
+	width: 98%;
+	height: auto;
+	background: white;
+	border-radius: 15px;
+}
+
+
+.titulo{
+
+
+font-size: 15px;
+padding-left:  50px;
+
+
+
+
+}
+
+
+.imagen{
+
+ border-color: grey;
+    border-width: 2px;
+    border-style: dotted;
+
+}
+
+
+#cerrar{
+	display: none;
+}
+#cerrar + label{
+	
+    position: fixed;
+	color: #D4FF33;
+	font-size: 30px;
+	z-index: 50;
+	background: darkred;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	right: 10px;
+	cursor: pointer;
+
+	animation: ventana 2s 3s forwards;
+	visibility: hidden;
+	opacity: 0;
+
+}
+
+
+
+
+
+
+#cerrar:checked +label,#cerrar:checked ~.ventana{
+	display: none;
+}
+
+ img{
+	max-width: 100%;
+}
+
+
+@keyframes ventana{
+	100%{                /*cuand llegue al 100% */
+		visibility: visible;   /*sea visible */
+		opacity: 1;
+	}
+}
